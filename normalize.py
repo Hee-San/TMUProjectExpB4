@@ -1,6 +1,22 @@
 # -*- coding: utf-8 -*-
 
-import cv2, matplotlib
-import numpy as np
-import matplotlib.pyplot as plt
-import os
+def unNormalize(img):
+    ans = img
+    return ans
+
+def sizeNormalize(img):
+    # ここに書く
+    ans = img
+    return ans
+
+
+def luminanceNormalize(img):
+    # ここに書く
+    ans = img
+    return ans
+
+
+def sizeAndLuminanceNnnormalize(img):
+    ans1 = sizeNormalize(img)
+    ans2 = luminanceNormalize(ans1)
+    return ans2
