@@ -20,7 +20,6 @@ if not os.path.exists(output_path):
 # カスケード分類器
 cascade = cv2.CascadeClassifier(cascade_path)
 
-os.remove(output_path)
 for i in range(1,nDB):
     # read an image
     img = cv2.imread(DB_path + '%03d' % i + '.jpg')
